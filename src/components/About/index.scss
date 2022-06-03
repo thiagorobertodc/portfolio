@@ -79,3 +79,16 @@
     transform: rotateX(90deg);
   }
 }
+
+@media (max-width: 600px) {
+  .stage-cube-cont {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    right: unset !important;
+}
+
+.text-zone {
+  margin-top: 30%;
+}
+}

@@ -86,3 +86,13 @@
     }
   }
 }
+
+@media (max-width: 600px) {
+  .page {
+    width: 150vw;
+    height: 100vh;
+    position: absolute;
+    margin-left: 64px;
+    overflow-x: hidden;
+  }
+}

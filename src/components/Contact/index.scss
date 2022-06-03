@@ -114,3 +114,14 @@
     }
   }
 }
+
+@media (max-width: 600px) {
+.map-wrap {
+  display: none;
+}
+.info-map {
+  position: absolute;
+  left: 0;
+  margin-left: 8px;
+}
+}
