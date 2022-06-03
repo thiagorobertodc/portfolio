@@ -56,11 +56,11 @@ const Home = () => {
             />
           </h1>
           <h2>Full Stack Developer / Mobile Developer </h2>
+        
           <Link to="/contact" className="flat-button">
             CONTACT ME
           </Link>
         </div>
- 
       </div>
 
       <Loader type="square-spin" />
