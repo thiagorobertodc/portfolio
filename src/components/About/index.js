@@ -33,18 +33,12 @@ const About = () => {
             />
           </h1>
           <p>
-            I'm very ambitious front-end developer looking for a role in
-            established IT company with the opportunity to work with the latest
-            technologies on challenging and diverse projects.
+          I'm a full stack developer, with knowledge also in mobile development. 
+          I have a BSc degree in Computer Science. 
+          Currently, I'm building code at Nursa, helping nurses in America to find better shifts with more attractive payments.
           </p>
           <p align="LEFT">
-            I'm quietly confident, naturally curious, and perpetually working on
-            improving my chops one design problem at a time.
-          </p>
-          <p>
-            If I need to define myself in one sentence that would be a family
-            person, father of a beautiful daughter, a sports fanatic,
-            photography enthusiast, and tech-obsessed!!!
+          I'm confident about the quality of my job and always ready to take on new challenges!
           </p>
         </div>
 
@@ -71,7 +65,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <Loader type="pacman" />
+      <Loader type="square-spin" />
     </>
   )
 }

@@ -49,9 +49,7 @@ const Contact = () => {
             />
           </h1>
           <p>
-            I am interested in freelance opportunities - especially ambitious or
-            large projects. However, if you have other request or question,
-            don't hesitate to contact me using below form either.
+            I am always open to talk, either about a new project or answering general questions! Don't be afraid to contact me anytime :)
           </p>
           <div className="contact-form">
             <form ref={form} onSubmit={sendEmail}>
@@ -90,25 +88,23 @@ const Contact = () => {
           </div>
         </div>
         <div className="info-map">
-          Slobodan Gajić,
+          Belo Horizonte,
           <br />
-          Serbia,
+          Minas Gerais,
           <br />
-          Branka RadiČevića 19, 22000 <br />
-          Sremska Mitrovica <br />
+          Rua Califórnia, 900 <br />
           <br />
-          <span>freelancerslobodan@gmail.com</span>
+          <span>thiagorobertodev@gmail.com</span>
         </div>
         <div className="map-wrap">
-          <MapContainer center={[44.96366, 19.61045]} zoom={13}>
+          <MapContainer center={[-19.9589849, -43.9341315]} zoom={13}>
             <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-            <Marker position={[44.96366, 19.61045]}>
-              <Popup>Sloba lives here, come over for a cup of coffee :)</Popup>
+            <Marker position={[-19.9589849, -43.9341315]}>
             </Marker>
           </MapContainer>
         </div>
       </div>
-      <Loader type="pacman" />
+      <Loader type="square-spin" />
     </>
   )
 }
