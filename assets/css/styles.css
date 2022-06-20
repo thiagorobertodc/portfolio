@@ -943,6 +943,13 @@ img {
   }
 }
 
+@media screen and (max-width: 420px) {
+  .services__container {
+    grid-template-columns: unset;
+    justify-content: center;
+  }
+}
+
 /* For medium devices */
 @media screen and (min-width: 568px) {
   .home__content {
