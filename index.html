@@ -13,6 +13,22 @@
         <!--==================== CSS ====================-->
         <link rel="stylesheet" href="assets/css/styles.css">
 
+        <!--==================== EMAIL JS ===============-->
+        <script>
+            function submit_form(){
+                var form = document.getElementById("contact__form");
+                for (const element of form.elements) {
+                    console.log(element);
+                    if (element.value == null || element.value == '') {
+                        alert(element.name + ' wasn`t provided. Please, fill in and try again');
+                        return;
+                    }
+                }
+                form.submit();
+                alert("Your message has been sent, thank you! :)");
+            }
+            </script>
+
         <!--=================== FAVICON =================-->
         <title>Thiago Roberto: Web & Mobile Developer</title>
         <link rel="icon" type="image/png" href="assets/img/favicon.png" />
@@ -574,31 +590,31 @@
                    </div>
                 </div>
               </div>
-                    <form action="" class="contact__form">
+                    <form action="https://formspree.io/f/mqknoppg" method="POST" id="contact__form" class="contact__form">
                         <div class="contact__inputs grid">
                             <div class="contact__content">
                                 <label for="" class="contact__label">Name</label>
-                                <input type="text" class="contact__input">
+                                <input type="text" name="name" class="contact__input">
                             </div>
                             <div class="contact__content">
                                 <label for="" class="contact__label">Email</label>
-                                <input type="email" class="contact__input">
+                                <input type="email" name="email" class="contact__input">
                             </div>
                             <div class="contact__content">
                                 <label for="" class="contact__label">Project</label>
-                                <input type="text" class="contact__input">
+                                <input type="text" name="project" class="contact__input">
                             </div>
                             <div class="contact__content">
                                 <label for="" class="contact__label">Message</label>
-                                <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                                <textarea name="message" id="" cols="0" rows="7" class="contact__input"></textarea>
                             </div>
 
-                            <div>
-                                <a href="#" class="button button--flex">
+                            <div onclick="submit_form()">
+                                <a class="button button--flex">
                                     Send Message
                                     <i class="uil uil-message button__icon"></i>
                                 </a>
-                               </div>
+                            </div>
                         </div>
                         
 
